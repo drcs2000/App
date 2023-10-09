@@ -1,0 +1,22 @@
+// ignore_for_file: must_be_immutable
+
+import 'package:flutter/material.dart';
+
+class HomeController extends InheritedNotifier<ValueNotifier<int>> {
+  HomeController({Key? key, required Widget child})
+    : super(
+      key: key,
+      child: child,
+      notifier: ValueNotifier(0)
+    );
+
+  static HomeController of(BuildContext context) {
+    return context.dependOnInheritedWidgetOfExactType<HomeController>()!;
+  }
+
+  int get value => notifier!.value;
+
+  increment() {
+    notifier!.value++;
+  }
+}
