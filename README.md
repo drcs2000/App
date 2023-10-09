@@ -74,4 +74,4 @@ Contributions to the Image Library App are welcome! Feel free to submit bug repo
 
 ## License
 
-This project is licensed under the [MIT License](LICENSE.md).
+This project is licensed under the [MIT License](LICENSE).
